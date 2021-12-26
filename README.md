@@ -1,1 +1,1 @@
-Programing challenges in go. 
+Programming challenges in go. 
