@@ -1,21 +1,21 @@
 package perfectnumber
 
 func isPerfectNumber(num int) bool {
-	sumOfResult := 1
-	for i := 2; i <= num/2; i++ {
+	var sumOfPerfectNumbers int = 1
+	for i := 0; i <= num/2; i++ {
 		if num%i == 0 {
-			sumOfResult += i
+			sumOfPerfectNumbers += i
 		}
 	}
-	return num == sumOfResult
+	return sumOfPerfectNumbers == num
 }
 
 func CalcPerfectNumbers(num int) []int {
-	calcResult := make([]int, 0)
+	perfectNumbers := make([]int, 0)
 	for i := 2; i <= num; i++ {
 		if isPerfectNumber(i) {
-			calcResult = append(calcResult, i)
+			perfectNumbers = append(perfectNumbers, i)
 		}
 	}
-	return calcResult
+	return perfectNumbers
 }
