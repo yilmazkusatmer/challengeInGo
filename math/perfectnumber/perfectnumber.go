@@ -1,4 +1,4 @@
-package main
+package perfectnumber
 
 func isPerfectNumber(num int) bool {
 	sumOfResult := 1
