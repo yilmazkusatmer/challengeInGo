@@ -2,7 +2,7 @@ package perfectnumber
 
 func isPerfectNumber(num int) bool {
 	var sumOfPerfectNumbers int = 1
-	for i := 0; i <= num/2; i++ {
+	for i := 2; i <= num/2; i++ {
 		if num%i == 0 {
 			sumOfPerfectNumbers += i
 		}
