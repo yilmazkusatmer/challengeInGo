@@ -10,7 +10,7 @@ func isPerfectNumber(num int) bool {
 	return num == sumOfResult
 }
 
-func calcPerferctNumbers(num int) []int {
+func CalcPerfectNumbers(num int) []int {
 	calcResult := make([]int, 0)
 	for i := 2; i <= num; i++ {
 		if isPerfectNumber(i) {

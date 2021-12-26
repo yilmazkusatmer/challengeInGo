@@ -18,7 +18,7 @@ var Tests = []struct {
 func TestCalcPerferctNumbers(t *testing.T) {
 	for _, tt := range Tests {
 		t.Run(tt.name, func(t *testing.T) {
-			calcResult := calcPerferctNumbers(tt.input)
+			calcResult := CalcPerfectNumbers(tt.input)
 			if !reflect.DeepEqual(calcResult, tt.result) {
 				t.Errorf("Calc(%v) produce %v, but expected %v", 1000, calcResult, tt.result)
 			}
