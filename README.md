@@ -1,1 +1,1 @@
-# challengeInGo
+Programing challenges in go. 
