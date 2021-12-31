@@ -22,7 +22,7 @@ func TestIsPalindrome(t *testing.T) {
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
 			if result := IsPalindrome(tt.input); result != tt.want {
-				t.Errorf("IsPalindrome(#{tt.input}) produce #{result}, but expected #{tt.want}")
+				t.Errorf("IsPalindrome(%v) produce %v, but expected %v", tt.input, result, tt.want)
 			}
 		})
 	}

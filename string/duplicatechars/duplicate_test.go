@@ -18,7 +18,7 @@ func TestContainDuplicateCharacters(t *testing.T) {
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
 			if result := ContainDuplicateCharacters(tt.input); result != tt.want {
-				t.Errorf("ContainDuplicateCharacters(#{tt.input}) produce #{result}, but expected #{tt.want}")
+				t.Errorf("ContainDuplicateCharacters(%v) produce %v, but expected %v", tt.input, result, tt.want)
 			}
 		})
 	}

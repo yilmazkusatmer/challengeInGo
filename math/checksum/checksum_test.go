@@ -18,7 +18,7 @@ func TestCalcChecksum(t *testing.T) {
 	for _, tt := range Inputs {
 		t.Run(tt.name, func(t *testing.T) {
 			if checksum := CalcChecksum(tt.input); checksum != tt.result {
-				t.Errorf("CalcChecksum(#{tt.input}) produce #{checksum}, but expected #{tt.result}")
+				t.Errorf("CalcChecksum(%v) produce %v, but expected %v", tt.input, checksum, tt.result)
 			}
 		})
 	}
