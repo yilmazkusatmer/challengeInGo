@@ -1,7 +1,6 @@
-package main
+package removeduplicates
 
 import (
-	"fmt"
 	"strings"
 )
 
@@ -19,8 +18,4 @@ func RemoveDuplicates(input string) string {
 		}
 	}
 	return result
-}
-
-func main() {
-	fmt.Println(RemoveDuplicates("Michael"))
 }
