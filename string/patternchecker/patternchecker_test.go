@@ -14,7 +14,7 @@ var tests = []struct {
 }{
 	{"check pattern for xyxy", args{"tom tim tom tim", "xyxy"}, true},
 	{"check pattern for xyyy", args{"foo fan fan foo", "xyyy"}, false},
-	{"check pattern for xyyx", args{"tom tim tim tom", "xyy∆x"}, true},
+	{"check pattern for xyyx", args{"tom tim tim tom", "xyyx"}, true},
 	{"check pattern for xxxx", args{"tom tom tom tim", "xxxx"}, false},
 }
 
