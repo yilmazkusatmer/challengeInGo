@@ -10,7 +10,7 @@ var tests = []struct {
 	{"Remove duplicate from Otto", "Otto", "Ot"},
 	{"Remove duplicate from abcba", "abcba", "abc"},
 	{"Remove duplicate from moon", "moon", "mon"},
-	{"Remove duplicate from michael", "michael", "michaela"},
+	{"Remove duplicate from michaela", "michaela", "michael"},
 }
 
 func TestRemoveDuplicates(t *testing.T) {
